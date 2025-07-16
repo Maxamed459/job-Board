@@ -20,17 +20,14 @@ const Header = () => {
           </nav>
           <div className="flex items-center gap-2">
             <h1 className="text-xl font-bold">Welcome {authUser.username}</h1>
-            <button
-              onClick={() => logout()}
-              className="bg-transparent border-1 border-white px-6 py-2"
-            >
-              logout
-            </button>
           </div>
         </>
       ) : (
         <>
-          <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center justify-between space-x-10">
+            <button className="bg-transparent border-1 border-white px-6 py-2">
+              <Link to="/apply-job">apply job</Link>
+            </button>
             <button className="bg-transparent border-1 border-white px-6 py-2">
               <Link to="/login">login</Link>
             </button>
