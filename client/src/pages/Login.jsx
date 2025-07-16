@@ -15,7 +15,6 @@ const Login = () => {
   }, []);
   return (
     <>
-      <Header />
       <div className="flex items-center justify-center h-screen">
         <LoginComp />
       </div>
