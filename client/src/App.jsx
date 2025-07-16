@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
-import Header from "./components/Header";
-import { Link, Outlet } from "react-router";
+import { Outlet } from "react-router";
 import { AuthProvider } from "../context/AuthContext";
-import axios from "axios";
+import Landing from "./pages/Landing";
+import Header from "./components/Header";
 
 const App = () => {
   return (
     <AuthProvider>
+      <Header />
       <Outlet />
     </AuthProvider>
   );
