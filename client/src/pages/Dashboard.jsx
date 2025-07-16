@@ -14,7 +14,6 @@ const Dashboard = () => {
   }, []);
   return (
     <>
-      <Header />
       <div>
         <DashboardComp />
       </div>
