@@ -36,8 +36,6 @@ const CreateJob = () => {
 
   return (
     <>
-      <Header />
-
       <div className="border border-slate-300 shadow-lg p-6 rounded w-[400px] mx-auto mt-6">
         <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
           <div className="grid gap-1">
